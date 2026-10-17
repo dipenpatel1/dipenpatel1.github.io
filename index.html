@@ -1,216 +1,276 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dipen Patel | Software Systems & Applied AI Engineer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>dipen@regina-srv: ~/portfolio</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #00ff00;
+      --dim-text: #00aa00;
+      --accent: #ffff00;
+      --border: #005500;
+      --highlight: #00ffff;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .terminal-container {
+      max-width: 900px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      padding: 20px;
+      background-color: #050505;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+    }
+
+    .prompt {
+      color: var(--highlight);
+    }
+
+    .command {
+      color: #ffffff;
+    }
+
+    .output {
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      color: var(--accent);
+      font-family: inherit;
+      font-weight: normal;
+    }
+
+    h1 { font-size: 18px; margin-bottom: 10px; text-transform: uppercase; }
+    h2 { font-size: 16px; margin-top: 20px; margin-bottom: 10px; border-bottom: 1px dashed var(--border); padding-bottom: 5px; }
+
+    p, ul {
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--highlight);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      background-color: var(--highlight);
+      color: #000;
+    }
+
+    .nav-bar {
+      margin: 15px 0;
+      padding: 10px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    button {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      font-family: 'Courier New', Courier, monospace;
+      padding: 5px 10px;
+      cursor: pointer;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+
+    button:hover, button.active {
+      background-color: var(--text);
+      color: #000;
+      font-weight: bold;
+    }
+
+    .project-card {
+      border: 1px dashed var(--border);
+      padding: 15px;
+      margin-bottom: 15px;
+      background: #020202;
+    }
+
+    .project-meta {
+      color: var(--dim-text);
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    .tech-tag {
+      color: var(--accent);
+      font-size: 12px;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 15px;
+      background-color: var(--text);
+      animation: blink 1s infinite;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    footer {
+      margin-top: 30px;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+      color: var(--dim-text);
+      font-size: 12px;
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
+<body>
 
-  <!-- Top Navigation -->
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#" class="text-xl font-bold tracking-tight text-white">
-        Dipen<span class="text-blue-500">.dev</span>
-      </a>
-      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
-        <a href="#projects" class="hover:text-blue-400 transition">Projects (10)</a>
-        <a href="#experience" class="hover:text-blue-400 transition">Experience & Education</a>
-        <a href="#skills" class="hover:text-blue-400 transition">Tech Stack</a>
-        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
-      </nav>
-      <div class="flex items-center space-x-4">
-        <a href="https://github.com/dipenpatel1" target="_blank" class="text-slate-300 hover:text-white text-lg" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/dipenrpatel/" target="_blank" class="text-slate-300 hover:text-blue-400 text-lg" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="max-w-6xl mx-auto px-6 py-20 md:py-28">
-    <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
-      M.Eng. Software Systems Engineering @ University of Regina
-    </div>
-    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
-      Dipen Rajnikant Patel
-    </h1>
-    <p class="text-lg md:text-xl text-slate-400 max-w-3xl leading-relaxed mb-8">
-      Software Systems & Applied AI Engineer specializing in <span class="text-slate-200 font-medium">Production MLOps, Explainable AI (XAI), Decentralized Smart Contracts, and Enterprise Full-Stack Systems</span>. Former Data & Software Engineering contributor at <span class="text-slate-200 font-medium">IBM</span>, <span class="text-slate-200 font-medium">NielsenIQ</span>, and <span class="text-slate-200 font-medium">Black iD Solutions</span>.
-    </p>
-    <div class="flex flex-wrap gap-4">
-      <a href="#projects" class="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition shadow-lg shadow-blue-600/25">
-        Explore 10 Engineering Projects
-      </a>
-      <a href="https://github.com/dipenpatel1" target="_blank" class="px-6 py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-sm transition">
-        <i class="fab fa-github mr-2"></i>GitHub Profile
-      </a>
-      <a href="https://www.linkedin.com/in/dipenrpatel/" target="_blank" class="px-6 py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-sm transition">
-        <i class="fab fa-linkedin mr-2 text-blue-400"></i>LinkedIn
-      </a>
-    </div>
-  </section>
-
-  <!-- Filterable Projects Section -->
-  <section id="projects" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/80">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
-      <div>
-        <h2 class="text-3xl font-bold text-white mb-2">Featured Engineering Portfolio</h2>
-        <p class="text-slate-400 text-sm">Graduate (University of Regina M.Eng.) & Undergraduate (B.Tech CSE) Systems</p>
-      </div>
-      <!-- Filter Buttons -->
-      <div class="flex flex-wrap gap-2 mt-4 md:mt-0" id="filter-buttons">
-        <button onclick="filterProjects('all')" class="filter-btn active px-4 py-2 rounded-lg text-xs font-semibold bg-blue-600 text-white transition">All (10)</button>
-        <button onclick="filterProjects('ai')" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 transition">AI, MLOps & Data Science (6)</button>
-        <button onclick="filterProjects('blockchain')" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 transition">Blockchain & Web3 (1)</button>
-        <button onclick="filterProjects('enterprise')" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 transition">Enterprise & Full-Stack (3)</button>
-      </div>
+  <div class="terminal-container">
+    <div class="output">
+      <span class="prompt">dipen@uor-server:~$</span> <span class="command">uname -a</span>
+      <p>Linux uor-eng-server 6.8.0-system-architecture #1 SMP PREW MEng Software Systems Engineering (Regina, SK)</p>
     </div>
 
-    <!-- Project Cards Grid -->
-    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
-  </section>
-
-  <!-- Experience & Education Section -->
-  <section id="experience" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/80">
-    <h2 class="text-3xl font-bold text-white mb-10">Academic & Industry Timeline</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-blue-400 mb-4"><i class="fas fa-graduation-cap mr-2"></i>Education</h3>
-        <div class="space-y-6">
-          <div>
-            <div class="text-xs text-slate-400">2026 – Present | Regina, SK, Canada</div>
-            <div class="font-bold text-white">Master of Engineering in Software Systems Engineering</div>
-            <div class="text-sm text-slate-300">University of Regina</div>
-            <p class="text-xs text-slate-400 mt-1">Coursework: Practical Deep Learning (ENSE 811), Responsible & Applied AI (ENSE 861/885BG), Blockchain Technology (ENSE 885BH), Artificial Intelligence (ENSE 311), Engineering Ethics (ENGG 703).</p>
-          </div>
-          <div>
-            <div class="text-xs text-slate-400">Completed May 2025 | Vadodara, India</div>
-            <div class="font-bold text-white">Bachelor of Technology (B.Tech) in Computer Science & Engineering</div>
-            <div class="text-sm text-slate-300">GSFC University</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-blue-400 mb-4"><i class="fas fa-briefcase mr-2"></i>Industry Experience</h3>
-        <div class="space-y-4 text-sm">
-          <div>
-            <div class="font-bold text-white">Junior Data Engineer — IBM</div>
-            <div class="text-xs text-slate-400">Data Engineering, ETL Pipelines & Scalable Analytics</div>
-          </div>
-          <div>
-            <div class="font-bold text-white">Associate Data Analyst — NielsenIQ</div>
-            <div class="text-xs text-slate-400">Market Research Analytics, Data Modeling & Reporting</div>
-          </div>
-          <div>
-            <div class="font-bold text-white">Junior Software Engineer / Web Dev Intern — Black iD Solutions</div>
-            <div class="text-xs text-slate-400">Full-Stack Web Development, CMS & Responsive UI Engineering</div>
-          </div>
-        </div>
-      </div>
+    <div class="output">
+      <span class="prompt">dipen@uor-server:~$</span> <span class="command">cat ./bio.txt</span>
+      <h1>Dipen Rajnikant Patel</h1>
+      <p><strong>Role:</strong> Software Systems & Applied AI Engineer</p>
+      <p><strong>Background:</strong> M.Eng. Software Systems Engineering @ University of Regina | Ex-IBM, NielsenIQ, Black iD Solutions.</p>
+      <p><strong>Focus:</strong> Production MLOps, Explainable AI (XAI), Decentralized Systems, and Enterprise Full-Stack Engineering.</p>
     </div>
-  </section>
 
-  <!-- Contact Footer -->
-  <footer id="contact" class="border-t border-slate-800 bg-slate-900/40 py-12">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div>
-        <div class="text-lg font-bold text-white">Dipen Rajnikant Patel</div>
-        <div class="text-sm text-slate-400">Regina, Saskatchewan, Canada · <a href="mailto:dipenrpatel1@gmail.com" class="text-blue-400 hover:underline">dipenrpatel1@gmail.com</a></div>
-      </div>
-      <div class="flex space-x-6 text-sm text-slate-400">
-        <a href="https://github.com/dipenpatel1" target="_blank" class="hover:text-white"><i class="fab fa-github mr-1"></i>github.com/dipenpatel1</a>
-        <a href="https://www.linkedin.com/in/dipenrpatel/" target="_blank" class="hover:text-white"><i class="fab fa-linkedin mr-1"></i>linkedin.com/in/dipenrpatel</a>
-      </div>
+    <!-- Navigation / Filter -->
+    <div class="nav-bar">
+      <span class="prompt">Filter Category:</span><br><br>
+      <button onclick="filterProjects('all')" class="active" id="btn-all">[all_projects]</button>
+      <button onclick="filterProjects('ai')" id="btn-ai">[ai_mlops]</button>
+      <button onclick="filterProjects('blockchain')" id="btn-blockchain">[blockchain]</button>
+      <button onclick="filterProjects('enterprise')" id="btn-enterprise">[enterprise_fullstack]</button>
     </div>
-  </footer>
+
+    <!-- Projects Section -->
+    <div class="output">
+      <span class="prompt">dipen@uor-server:~$</span> <span class="command">ls -la ./projects/</span>
+      <h2>[ 10 Verified Engineering Repositories ]</h2>
+      <div id="projects-grid"></div>
+    </div>
+
+    <!-- Links / Contact -->
+    <div class="output">
+      <span class="prompt">dipen@uor-server:~$</span> <span class="command">cat ./contact_info</span>
+      <p>Email: <a href="mailto:dipenrpatel1@gmail.com">dipenrpatel1@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/dipenpatel1" target="_blank">github.com/dipenpatel1</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/dipenrpatel/" target="_blank">linkedin.com/in/dipenrpatel</a></p>
+    </div>
+
+    <div class="output">
+      <span class="prompt">dipen@uor-server:~$</span> <span class="command">echo $USER</span>
+      <p>dipenpatel1 <span class="cursor"></span></p>
+    </div>
+
+    <footer>
+      [System Status: Online] &bull; Domain: dipenpatel.runs-on.dev &bull; Host: GitHub Pages
+    </footer>
+  </div>
 
   <script>
     const projects = [
       {
-        title: "Predictive Maintenance with Explainable AI (XAI)",
+        title: "xai-predictive-maintenance",
         category: "ai",
-        badge: "UofR Master's · ENSE 861/885BG",
-        desc: "End-to-end industrial equipment failure diagnostic pipeline on the AI4I 2020 dataset pairing Neural Networks & ML classifiers with SHAP and LIME for global and instance-level root-cause transparency.",
-        tech: ["Python", "SHAP", "LIME", "Deep Learning", "AI4I 2020"],
+        badge: "UofR Master's (ENSE 861)",
+        desc: "Industrial equipment failure diagnostics using AI4I 2020 telemetry, pairing Neural Networks with SHAP and LIME for global and instance-level interpretability.",
+        tech: ["Python", "SHAP", "LIME", "Deep Learning", "AI4I"],
         repo: "https://github.com/dipenpatel1/xai-predictive-maintenance"
       },
       {
-        title: "Heart Disease Prediction MLOps Pipeline",
+        title: "heart-disease-mlops-pipeline",
         category: "ai",
-        badge: "UofR Master's · ENSE 811",
-        desc: "Reproducible clinical risk prediction pipeline orchestrating DVC for dataset/model versioning, MLflow for hyperparameter tracking, and Docker for containerized inference.",
-        tech: ["Python", "DVC", "MLflow", "Docker", "Deep Learning"],
+        badge: "UofR Master's (ENSE 811)",
+        desc: "Reproducible clinical risk prediction pipeline orchestrating DVC for version control, MLflow for experiment tracking, and Docker for containerized inference.",
+        tech: ["Python", "DVC", "MLflow", "Docker"],
         repo: "https://github.com/dipenpatel1/heart-disease-mlops-pipeline"
       },
       {
-        title: "Socio-Economic Healthcare Access & LLM Policy Engine",
+        title: "healthcare-access-gbm-llm-policy",
         category: "ai",
-        badge: "UofR Master's · ENSE 861",
-        desc: "Responsible AI pipeline benchmarking LightGBM, CatBoost, and XGBoost on healthcare determinants with demographic fairness auditing and a custom LLM layer for policy generation.",
-        tech: ["LightGBM", "CatBoost", "XGBoost", "Custom LLM", "Fairness Audit"],
+        badge: "UofR Master's (ENSE 861)",
+        desc: "Responsible AI pipeline benchmarking LightGBM, CatBoost, and XGBoost on healthcare access with demographic fairness auditing and a custom LLM policy engine.",
+        tech: ["LightGBM", "CatBoost", "XGBoost", "Custom LLM"],
         repo: "https://github.com/dipenpatel1/healthcare-access-gbm-llm-policy"
       },
       {
-        title: "Decentralized Supply Chain Smart Contract System",
+        title: "blockchain-supply-chain-hardhat",
         category: "blockchain",
-        badge: "UofR Master's · ENSE 885BH",
-        desc: "Ethereum smart contract suite built in Solidity and Hardhat for tamper-proof multi-party supply chain tracking, paired with an IEEE-formatted smart contract security analysis paper.",
-        tech: ["Solidity", "Ethereum", "Hardhat", "Smart Contract Security"],
+        badge: "UofR Master's (ENSE 885BH)",
+        desc: "Ethereum smart contract suite in Solidity and Hardhat for tamper-proof supply chain provenance, paired with an IEEE-formatted security paper.",
+        tech: ["Solidity", "Ethereum", "Hardhat", "JavaScript"],
         repo: "https://github.com/dipenpatel1/blockchain-supply-chain-hardhat"
       },
       {
-        title: "Hybrid Stock Price Forecasting (LSTM + ARIMA + VADER)",
+        title: "stock-forecasting-lstm-arima-sentiment",
         category: "ai",
-        badge: "B.Tech CSE · Flagship AI",
+        badge: "B.Tech CSE (Flagship AI)",
         desc: "Multi-modal financial forecasting engine combining statistical ARIMA and stacked LSTM networks with daily financial news sentiment scored via NLTK VADER (R² > 0.96).",
-        tech: ["Python", "TensorFlow LSTM", "ARIMA", "NLTK VADER", "Time-Series"],
+        tech: ["Python", "TensorFlow LSTM", "ARIMA", "NLTK VADER"],
         repo: "https://github.com/dipenpatel1/stock-forecasting-lstm-arima-sentiment"
       },
       {
-        title: "Enterprise University Asset & Inventory Tracker",
+        title: "university-asset-tracker-dotnet",
         category: "enterprise",
-        badge: "B.Tech CSE · Enterprise .NET",
+        badge: "B.Tech CSE (.NET Enterprise)",
         desc: "Role-based campus hardware inventory and preventive maintenance lifecycle system engineered with C#, ASP.NET MVC, and normalized MS SQL Server relational schemas.",
-        tech: ["C#", "ASP.NET", "MS SQL Server", "RBAC", "MVC"],
+        tech: ["C#", "ASP.NET", "MS SQL Server", "RBAC"],
         repo: "https://github.com/dipenpatel1/university-asset-tracker-dotnet"
       },
       {
-        title: "Computer Vision & Scene Recognition Suite",
+        title: "computer-vision-scene-recognition",
         category: "ai",
-        badge: "UofR Master's · ENSE 811 CV",
-        desc: "Visual recognition benchmark comparing classical computer vision (Camera Calibration, SIFT keypoints, Bag-of-Words + SVM) against Deep Convolutional Neural Networks.",
-        tech: ["Python", "OpenCV", "SIFT", "BoW + SVM", "PyTorch CNN"],
+        badge: "UofR Master's (ENSE 811 CV)",
+        desc: "Visual recognition benchmark comparing classical computer vision (Camera Calibration, SIFT, Bag-of-Words + SVM) against Deep Convolutional Neural Networks.",
+        tech: ["Python", "OpenCV", "SIFT", "PyTorch CNN"],
         repo: "https://github.com/dipenpatel1/computer-vision-scene-recognition"
       },
       {
-        title: "Classical AI: Heuristic Search, CSP Sudoku & Bayes' Nets",
+        title: "classical-ai-search-and-csp",
         category: "ai",
-        badge: "UofR Master's · ENSE 311",
-        desc: "Modular AI toolkit featuring A* and Uniform Cost Search pathfinding, a Backtracking Constraint Satisfaction Problem (CSP) Sudoku solver, and Bayesian network inference.",
-        tech: ["Python", "A* Search", "CSP Backtracking", "Bayesian Networks"],
+        badge: "UofR Master's (ENSE 311)",
+        desc: "Modular AI toolkit featuring A* and Uniform Cost Search pathfinding, a Backtracking CSP Sudoku solver, and probabilistic Bayesian network inference.",
+        tech: ["Python", "A* Search", "CSP Backtracking", "Bayes' Nets"],
         repo: "https://github.com/dipenpatel1/classical-ai-search-and-csp"
       },
       {
-        title: "Containerized Full-Stack Library Management System",
+        title: "library-management-php-mysql",
         category: "enterprise",
-        badge: "B.Tech CSE · Full-Stack Web",
-        desc: "Dual-portal (Admin/Student) library catalog, book circulation, and automated fine calculation system packaged with Docker Compose (PHP 8.3, Apache, MySQL 8.0).",
-        tech: ["PHP 8.3", "MySQL 8.0", "Docker Compose", "JavaScript"],
+        badge: "B.Tech CSE (Dockerized Web)",
+        desc: "Dual-portal library catalog, circulation, and automated fine calculation system packaged with Docker Compose (PHP 8.3, Apache, MySQL 8.0).",
+        tech: ["PHP 8.3", "MySQL 8.0", "Docker Compose"],
         repo: "https://github.com/dipenpatel1/library-management-php-mysql"
       },
       {
-        title: "Responsive Content Publishing & Blogging Platform",
+        title: "responsive-blog-platform",
         category: "enterprise",
-        badge: "B.Tech CSE · Frontend Web",
-        desc: "Lightweight, responsive multi-page publishing platform featuring dynamic DOM rendering, article filtering, and clean reading typography.",
-        tech: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
+        badge: "B.Tech CSE (Frontend)",
+        desc: "Lightweight, responsive multi-page publishing platform featuring dynamic DOM rendering and clean reading typography deployed via GitHub Pages.",
+        tech: ["HTML5", "CSS3", "JavaScript"],
         repo: "https://github.com/dipenpatel1/responsive-blog-platform"
       }
     ];
@@ -218,21 +278,17 @@
     function renderProjects(filter = 'all') {
       const grid = document.getElementById('projects-grid');
       const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+      
+      // Update active button state
+      document.querySelectorAll('.nav-bar button').forEach(btn => btn.classList.remove('active'));
+      document.getElementById(`btn-${filter}`).classList.add('active');
+
       grid.innerHTML = filtered.map(p => `
-        <div class="bg-slate-900/70 border border-slate-800 hover:border-blue-500/50 rounded-xl p-6 flex flex-col justify-between transition group">
-          <div>
-            <div class="flex justify-between items-start gap-4 mb-3">
-              <span class="text-xs font-medium px-2.5 py-1 rounded bg-slate-800 text-blue-400 border border-slate-700">${p.badge}</span>
-              <a href="${p.repo}" target="_blank" class="text-slate-400 group-hover:text-blue-400 text-sm font-medium inline-flex items-center">
-                <i class="fab fa-github mr-1.5"></i>Code <i class="fas fa-arrow-up-right-from-square ml-1 text-xs"></i>
-              </a>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition">${p.title}</h3>
-            <p class="text-sm text-slate-400 leading-relaxed mb-4">${p.desc}</p>
-          </div>
-          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800/80">
-            ${p.tech.map(t => `<span class="text-xs px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">${t}</span>`).join('')}
-          </div>
+        <div class="project-card">
+          <div class="project-meta">> ${p.badge}</div>
+          <h3><a href="${p.repo}" target="_blank">${p.title} ↗</a></h3>
+          <p style="font-size: 13px; margin: 8px 0; color: #ccc;">${p.desc}</p>
+          <div class="tech-tag">Tech: [ ${p.tech.join(' | ')} ]</div>
         </div>
       `).join('');
     }
