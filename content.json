@@ -1,0 +1,603 @@
+{
+  "profile": {
+    "name": "Dipen Rajnikant Patel",
+    "city": "Regina, Saskatchewan, Canada",
+    "phone": "+1 (306) 501-9385",
+    "email": "dipenrpatel1@gmail.com",
+    "github": "https://github.com/dipenpatel1",
+    "portfolio": "https://dipenpatel.runs-on.dev",
+    "linkedin": "https://www.linkedin.com/in/dipenrpatel/"
+  },
+  "projects": [
+    {
+      "id": "xai-predictive-maintenance",
+      "title": "Predictive Maintenance with Explainable AI",
+      "category": "ai",
+      "status": "Academic project",
+      "summary": "An equipment-failure prediction pipeline using the AI4I 2020 dataset, machine learning classifiers, neural networks, and SHAP/LIME explanations.",
+      "bullets": [
+        "Developed an equipment-failure prediction pipeline using the AI4I 2020 dataset and machine learning classifiers.",
+        "Used neural network models to explore industrial equipment failure prediction alongside classical machine learning approaches.",
+        "Applied SHAP and LIME to interpret model predictions at the dataset and individual-instance levels."
+      ],
+      "tech": [
+        "Python",
+        "Machine Learning",
+        "Neural Networks",
+        "SHAP",
+        "LIME"
+      ],
+      "evidenceNote": "All features are derived from the supplied portfolio HTML. No source, evaluation results, or report was provided for this project; confirm completion before using past-tense resume bullets. The HTML associates it with ENSE 861/885BG.",
+      "exclusions": [
+        "SHAP and LIME explain model behavior and do not establish causal root causes.",
+        "No production deployment, failure reduction, or accuracy metric is documented.",
+        "AI4I 2020 is a dataset, not a programming technology."
+      ],
+      "group": "html-addition",
+      "candidateRepository": "https://github.com/dipenpatel1/xai-predictive-maintenance",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "healthcare-access-gbm-llm-policy",
+      "title": "Socio-Economic Data Analysis on Healthcare Access & Outcomes",
+      "category": "ai",
+      "status": "Academic project",
+      "summary": "World Bank data analysis and machine learning to explore healthcare access, predict health outcomes, and generate policy-oriented insights.",
+      "bullets": [
+        "Analyzed World Bank datasets to examine relationships between socio-economic factors, healthcare access, and health outcomes in low-income communities.",
+        "Developed a machine learning pipeline using LightGBM, CatBoost, and XGBoost to predict health outcomes from socio-economic indicators.",
+        "Developed an LLM-based insight-generation layer to translate analytical findings into targeted observations for healthcare policymakers."
+      ],
+      "tech": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "LightGBM",
+        "CatBoost",
+        "XGBoost",
+        "Plotly",
+        "Seaborn"
+      ],
+      "evidenceNote": "Based on the user's existing resume description. The HTML describes the same project with a different title and an unconfirmed master's-course attribution. No executable project source or model evaluation was supplied for this entry.",
+      "exclusions": [
+        "Demographic fairness auditing appears only in the supplied HTML and is unverified.",
+        "Do not imply training an LLM from scratch; model identity, training approach, and integration method are unspecified.",
+        "Do not assign ENSE 861 or a graduate-project date without confirmation."
+      ],
+      "group": "existing-resume",
+      "candidateRepository": "https://github.com/dipenpatel1/healthcare-access-gbm-llm-policy",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "stock-forecasting-lstm-arima-sentiment",
+      "title": "Stock Price Prediction & Sentiment Analysis System",
+      "category": "ai",
+      "status": "Academic project",
+      "summary": "Stock forecasting with statistical and deep learning models, financial-news sentiment analysis, and an interactive Streamlit dashboard.",
+      "bullets": [
+        "Developed a stock forecasting system combining LSTM and ARIMA models with VADER sentiment analysis of financial news.",
+        "Built an interactive Streamlit dashboard integrating yfinance and NewsAPI, with stock-price and sentiment visualizations using Plotly and Matplotlib.",
+        "Evaluated Random Forest regression and optimized deep learning models with PyTorch to compare approaches to stock-price prediction."
+      ],
+      "tech": [
+        "Python",
+        "LSTM",
+        "ARIMA",
+        "VADER",
+        "Streamlit",
+        "NewsAPI",
+        "yfinance",
+        "Scikit-learn",
+        "PyTorch",
+        "TensorFlow",
+        "Plotly",
+        "Matplotlib"
+      ],
+      "evidenceNote": "Based on the user's existing resume description. The kit's stock reconstruction brief refers to the same capstone and should not create a second portfolio entry. The original executable source is missing from the supplied kits.",
+      "exclusions": [
+        "R² = 0.96+ was attributed by the user to Random Forest, not LSTM or the entire hybrid system. Omitted pending validation of the split, baseline, target, and leakage controls.",
+        "No claim of trading performance, profitability, or production deployment.",
+        "No claim of daily sampling or stacked LSTM architecture; those details appear only in the HTML."
+      ],
+      "group": "existing-resume",
+      "candidateRepository": "https://github.com/dipenpatel1/stock-forecasting-lstm-arima-sentiment",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "heart-disease-mlops-pipeline",
+      "title": "Heart Disease Prediction MLOps Pipeline",
+      "category": "ai",
+      "status": "Academic project",
+      "summary": "A heart-disease risk-prediction workflow with DVC versioning, MLflow experiment tracking, and Docker-based model inference.",
+      "bullets": [
+        "Developed a heart-disease risk-prediction workflow using Python and deep learning models.",
+        "Used DVC to version datasets and models and MLflow to track model experiments and hyperparameters.",
+        "Containerized model inference with Docker to support reproducible execution of the prediction workflow."
+      ],
+      "tech": [
+        "Python",
+        "Deep Learning",
+        "DVC",
+        "MLflow",
+        "Docker"
+      ],
+      "evidenceNote": "All features are derived from the supplied portfolio HTML. No source, evaluation results, or report was provided for this project; confirm completion before using past-tense resume bullets. The HTML associates it with ENSE 811.",
+      "exclusions": [
+        "No clinical validation, medical deployment, or diagnostic capability is documented.",
+        "No CI/CD, cloud hosting, monitoring, or production MLOps operation is documented."
+      ],
+      "group": "html-addition",
+      "candidateRepository": "https://github.com/dipenpatel1/heart-disease-mlops-pipeline",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "blockchain-supply-chain-hardhat",
+      "title": "Decentralized Supply Chain Smart Contract System",
+      "category": "blockchain",
+      "status": "Academic project",
+      "summary": "Ethereum smart contracts for multi-party supply-chain tracking, developed with Solidity and Hardhat and accompanied by a security-analysis report.",
+      "bullets": [
+        "Developed Ethereum smart contracts in Solidity to model multi-party supply-chain tracking workflows.",
+        "Used Hardhat as the development environment for the smart-contract implementation.",
+        "Prepared a smart-contract security analysis in IEEE format to document security considerations for the supply-chain system."
+      ],
+      "tech": [
+        "Solidity",
+        "Ethereum",
+        "Hardhat"
+      ],
+      "evidenceNote": "All features are derived from the supplied portfolio HTML. No source, test results, or report was provided for this project; confirm completion before using past-tense resume bullets. The HTML associates it with ENSE 885BH.",
+      "exclusions": [
+        "Avoid 'tamper-proof'; blockchain records do not guarantee the integrity of real-world inputs or eliminate contract vulnerabilities.",
+        "An IEEE-formatted report is not evidence of IEEE publication.",
+        "No test coverage, audit certification, deployment network, or transaction throughput is documented."
+      ],
+      "group": "html-addition",
+      "candidateRepository": "https://github.com/dipenpatel1/blockchain-supply-chain-hardhat",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "computer-vision-scene-recognition",
+      "title": "Computer Vision & Scene Recognition Suite",
+      "category": "ai",
+      "status": "Academic project",
+      "summary": "Computer vision experiments spanning camera calibration, SIFT descriptors, bag-of-words classification, and convolutional neural networks.",
+      "bullets": [
+        "Implemented computer vision experiments using OpenCV, including camera calibration and SIFT feature extraction.",
+        "Built a scene-recognition approach using visual bag-of-words representations and support vector machine classification.",
+        "Compared classical visual-recognition methods with convolutional neural networks implemented in PyTorch."
+      ],
+      "tech": [
+        "Python",
+        "OpenCV",
+        "SIFT",
+        "Bag of Words",
+        "SVM",
+        "PyTorch",
+        "CNN"
+      ],
+      "evidenceNote": "All features are derived from the supplied portfolio HTML. No source, evaluation results, or report was provided for this project; confirm completion before using past-tense resume bullets. The HTML associates it with ENSE 811.",
+      "exclusions": [
+        "No dataset, accuracy improvement, deployment, or benchmark result is specified."
+      ],
+      "group": "html-addition",
+      "candidateRepository": "https://github.com/dipenpatel1/computer-vision-scene-recognition",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "classical-ai-search-and-csp",
+      "title": "Classical AI Toolkit — Search, Sudoku & Bayesian Networks",
+      "category": "ai",
+      "status": "Academic project",
+      "summary": "A Python toolkit exploring heuristic and cost-based search, constraint-satisfaction Sudoku solving, and Bayesian-network inference.",
+      "bullets": [
+        "Implemented A* and Uniform Cost Search algorithms for pathfinding in a modular Python toolkit.",
+        "Developed a Sudoku solver using backtracking and a constraint-satisfaction formulation.",
+        "Implemented Bayesian-network inference to explore probabilistic reasoning within the AI toolkit."
+      ],
+      "tech": [
+        "Python",
+        "A* Search",
+        "Uniform Cost Search",
+        "Constraint Satisfaction",
+        "Backtracking",
+        "Bayesian Networks"
+      ],
+      "evidenceNote": "All features are derived from the supplied portfolio HTML. No source, evaluation results, or report was provided for this project; confirm completion before using past-tense resume bullets. The HTML associates it with ENSE 311.",
+      "exclusions": [
+        "No measured search-speed improvement, solver success rate, or inference algorithm is specified."
+      ],
+      "group": "html-addition",
+      "candidateRepository": "https://github.com/dipenpatel1/classical-ai-search-and-csp",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "library-management-php-mysql",
+      "title": "Library Management System — Full-Stack Web Application",
+      "category": "enterprise",
+      "status": "Academic project",
+      "summary": "A PHP and MySQL library application with user and administrator workflows for catalog search, circulation, inventory, fines, and reminders.",
+      "bullets": [
+        "Built a dual-role library application with user and administrator workflows for book search, issue and return, inventory management, fines, and feedback.",
+        "Implemented the backend with PHP and MySQL and created responsive interfaces using HTML, CSS, JavaScript, and Bootstrap.",
+        "Designed the application using ER and UML diagrams and incorporated email reminders to support library circulation workflows."
+      ],
+      "tech": [
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap"
+      ],
+      "evidenceNote": "Based on the user's existing resume description. The supplied HTML presents a containerized variant of the same library project; no executable source was supplied for verification.",
+      "exclusions": [
+        "Docker Compose, Apache, PHP 8.3, and MySQL 8.0 appear only in the HTML and are unverified enhancements.",
+        "Avoid claiming production scale, deployment, or automated fine rules beyond the documented fine-management feature."
+      ],
+      "group": "existing-resume",
+      "candidateRepository": "https://github.com/dipenpatel1/library-management-php-mysql",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "university-asset-tracker-dotnet",
+      "title": "Inventory Management System — University Asset Tracker",
+      "category": "enterprise",
+      "status": "Academic project",
+      "summary": "A university asset tracker covering departmental inventory, maintenance records, user roles, and stock alerts with a C# and ASP.NET backend.",
+      "bullets": [
+        "Developed a university asset-management system with modules for departmental inventory tracking, maintenance records, user roles, and stock alerts.",
+        "Implemented the application using C# and ASP.NET with MS SQL Server to organize and manage institutional asset data.",
+        "Designed a structured relational database schema and an administrative interface for inventory and maintenance workflows."
+      ],
+      "tech": [
+        "C#",
+        "ASP.NET",
+        "MS SQL Server"
+      ],
+      "evidenceNote": "Based on the user's existing resume description. The HTML describes the same asset-tracking system. No executable source was supplied for this entry.",
+      "exclusions": [
+        "RFID tracking and predictive analytics were proposed enhancements, not implemented features.",
+        "The exact ASP.NET MVC architecture and preventive-maintenance scheduling are not confirmed by the resume description.",
+        "Do not imply enterprise deployment or measured scale."
+      ],
+      "group": "existing-resume",
+      "candidateRepository": "https://github.com/dipenpatel1/university-asset-tracker-dotnet",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "realtime-chat-fullstack",
+      "title": "Real-Time Chat — Full-Stack Application",
+      "category": "realtime",
+      "status": "In development",
+      "summary": "A React and Express messaging application with Socket.IO event handlers, persisted message history, and account authentication modules.",
+      "bullets": [
+        "Developed React chat and account interfaces with an Express backend and Socket.IO messaging event handlers.",
+        "Modeled users and messages in PostgreSQL through Sequelize and implemented APIs for storing messages and retrieving conversation history.",
+        "Added JWT login and socket authentication logic, typing-status events, and message-delivery state handlers."
+      ],
+      "tech": [
+        "React",
+        "Node.js",
+        "Express",
+        "Socket.IO",
+        "Sequelize",
+        "PostgreSQL",
+        "Redis",
+        "JWT"
+      ],
+      "evidenceNote": "client/src/App.js, server/controllers/authController.js, messageController.js, server/socket/socket.js, and Sequelize models support these code-level claims. Requires database, Redis, and client/server integration verification.",
+      "exclusions": [
+        "No verified end-to-end delivery, throughput/latency figures, production deployment, or horizontal scaling.",
+        "API emission targets a receiver-ID room while socket code tracks socket IDs; integration needs review.",
+        "Redis logout code alone does not establish effective token revocation."
+      ],
+      "group": "kit-addition",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "live-polling-system",
+      "title": "Live Polling & Voting System",
+      "category": "realtime",
+      "status": "In development",
+      "summary": "A React polling application with poll creation, voting, PostgreSQL-backed results, and Socket.IO update events.",
+      "bullets": [
+        "Built React interfaces for creating polls, selecting options, and displaying vote counts.",
+        "Implemented Express endpoints and Sequelize models to store poll questions, options, and votes in PostgreSQL.",
+        "Added request validation and Socket.IO broadcasts for new polls and updated results."
+      ],
+      "tech": [
+        "React",
+        "Node.js",
+        "Express",
+        "Socket.IO",
+        "Sequelize",
+        "PostgreSQL",
+        "JavaScript"
+      ],
+      "evidenceNote": "client/src/components/, server/controllers/pollController.js, server/sockets/socket.js, and Poll/PollOption models contain the stated features. Database and multi-client runtime behavior were not tested in this audit.",
+      "exclusions": [
+        "No demonstrated duplicate-vote prevention, authenticated voting, fraud resistance, or production concurrency testing.",
+        "Do not claim measured real-time latency or deployed availability."
+      ],
+      "group": "kit-addition",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "student-management-api",
+      "title": "Student & Academic Records Management API",
+      "category": "backend",
+      "status": "In development",
+      "summary": "An Express API for student, parent, subject, and grade records, with separate administrator and student route groups.",
+      "bullets": [
+        "Developed Express routes and controllers for managing student profiles, parent records, subjects, and grades.",
+        "Designed Sequelize models and relational associations for PostgreSQL-based academic records.",
+        "Separated administrator and student API flows and added request validation, profile updates, and soft-delete operations."
+      ],
+      "tech": [
+        "Node.js",
+        "Express",
+        "Sequelize",
+        "PostgreSQL",
+        "Redis",
+        "JWT",
+        "JavaScript"
+      ],
+      "evidenceNote": "models/index.js, controllers/admin/, controllers/user/, routes/, and validations/ contain these modules. Integration requires PostgreSQL/Redis and the externally referenced student_results_view. Runtime and authorization have not been verified.",
+      "exclusions": [
+        "No verified deployed school management system, frontend dashboard, performance gain, or audited role security.",
+        "Do not claim complete results reporting until the required database view is supplied and tested."
+      ],
+      "group": "kit-addition",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "blogging-express-ejs",
+      "title": "Express & EJS Blogging Platform",
+      "category": "web",
+      "status": "In development",
+      "summary": "A server-rendered blogging application with article creation, category browsing, search, and MongoDB-backed content models.",
+      "bullets": [
+        "Developed a server-rendered blogging application with Express and EJS templates for article creation, article viewing, and account screens.",
+        "Modeled users, posts, categories, and contact submissions with MongoDB and Mongoose.",
+        "Implemented category-based article queries, paginated listings, and title/content search to help readers discover posts."
+      ],
+      "tech": [
+        "Node.js",
+        "Express",
+        "EJS",
+        "MongoDB",
+        "Mongoose",
+        "JavaScript"
+      ],
+      "evidenceNote": "controllers/blogController.js and searchController.js contain creation, category queries, listing pagination, and text matching; models/ and views/ contain the data and rendering layers. MongoDB-backed execution remains unverified.",
+      "exclusions": [
+        "Do not claim secure authentication: authController.js compares/stores plaintext passwords in the recovered implementation.",
+        "No demonstrated author-scoped edit/delete CRUD or production security validation.",
+        "Search pagination is not fully applied to the search query; only listing pagination is claimed."
+      ],
+      "group": "kit-addition",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "blogging-api-fastapi",
+      "title": "FastAPI Authentication Backend for a Blogging Platform",
+      "category": "backend",
+      "status": "In development",
+      "summary": "The account-service foundation of a blogging API, organized into FastAPI routes, validation, security helpers, ORM models, and migrations.",
+      "bullets": [
+        "Structured a FastAPI backend into API, validation, service, security, and database layers for a blogging platform's account service.",
+        "Implemented registration, login, and token-refresh route logic with Pydantic validation and password-hashing helpers.",
+        "Defined a PostgreSQL user model with SQLAlchemy and Alembic migrations, alongside application health and API documentation endpoints."
+      ],
+      "tech": [
+        "Python",
+        "FastAPI",
+        "Pydantic",
+        "SQLAlchemy",
+        "Alembic",
+        "PostgreSQL",
+        "JWT"
+      ],
+      "evidenceNote": "main.py registers only app/api/auth.py; app/models/user.py and the Alembic migration define users. No post/comment content models or CRUD routes were found. Authentication code requires repair and runtime validation, including missing constants/responses imports in auth.py.",
+      "exclusions": [
+        "Do not present as a completed blogging REST API with post/comment CRUD; those are roadmap features.",
+        "No verified authentication correctness, production deployment, or SQLite compatibility.",
+        "Archive timestamps after May 2025 do not establish a B.Tech coursework completion date."
+      ],
+      "group": "kit-addition",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "django-task-manager",
+      "title": "Django Task Management REST API",
+      "category": "backend",
+      "status": "In development",
+      "summary": "A Django REST API for user-associated tasks with due dates, priority, completion state, status filtering, and soft deletion.",
+      "bullets": [
+        "Developed Django REST Framework endpoints for creating, listing, updating, completing, and soft-deleting tasks.",
+        "Modeled task ownership, due dates, priorities, and status fields with Django ORM and PostgreSQL configuration.",
+        "Added JWT-based account endpoints, serializers, request validation, and user-scoped queries with status filtering."
+      ],
+      "tech": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "PostgreSQL",
+        "Simple JWT"
+      ],
+      "evidenceNote": "tasks/models.py, tasks/views.py, tasks/serializers.py, tasks/urls.py, users/views.py, and migrations contain the stated modules. Database setup, migration execution, and authentication behavior were not verified in this audit.",
+      "exclusions": [
+        "No implemented frontend UI is established by the source.",
+        "No verified deployment, reminder service, team collaboration, or performance measurements.",
+        "Archive timestamps after May 2025 do not establish a B.Tech coursework completion date."
+      ],
+      "group": "kit-addition",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "qr-attendance-generator",
+      "title": "QR Attendance Identifier Generator",
+      "category": "backend",
+      "status": "Source available",
+      "summary": "A Python command-line utility that converts attendance identifiers into QR images with input validation and configurable output paths.",
+      "bullets": [
+        "Created a Python utility to encode attendance identifiers as QR images using qrcode and Pillow.",
+        "Added command-line options for identifier input and image output, including automatic creation of destination folders.",
+        "Validated empty input and used automatic QR sizing to accommodate identifiers of different lengths."
+      ],
+      "tech": [
+        "Python",
+        "qrcode",
+        "Pillow",
+        "argparse"
+      ],
+      "evidenceNote": "a.py implements --data, --output, empty-input validation, QR sizing, and image saving; tests/test_generator.py contains two basic tests. The kit reports prior local smoke testing; no tests were rerun in this audit.",
+      "exclusions": [
+        "No QR scanner, attendance database, duplicate-scan protection, session tokens, dashboard, or reporting backend.",
+        "Optional Flask/FastAPI/SQLite attendance tracking in the development brief is planned work."
+      ],
+      "group": "kit-addition",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "hendecagon-event-planners",
+      "title": "Hendecagon Event Planners — Event Management Website",
+      "category": "web",
+      "status": "Academic project",
+      "summary": "A responsive event-planning website with services, blog, gallery, and contact pages, developed as part of a six-member team.",
+      "bullets": [
+        "Developed a responsive event-planning website with Home, Services, Blog, Gallery, and Contact sections using HTML, CSS, JavaScript, and WordPress.",
+        "Created custom interface elements and Canva visuals, including testimonial carousels and image sliders.",
+        "Collaborated in a six-member team on domain hosting, basic SEO, and frontend debugging to improve the website's presentation and usability."
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "WordPress",
+        "Canva"
+      ],
+      "evidenceNote": "Present in the user's existing resume and missing from the supplied HTML. No repository URL or executable project source was supplied for this entry.",
+      "exclusions": [
+        "No event-booking engine, payment integration, or measured SEO improvement is documented."
+      ],
+      "group": "existing-resume",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "responsive-blog-platform",
+      "title": "The Daily Loop — Blogging Website",
+      "category": "web",
+      "status": "Academic project",
+      "summary": "A personal blogging website with responsive navigation, category archives, image sliders, animations, and newsletter subscription features.",
+      "bullets": [
+        "Built a personal blogging website with HTML, CSS, and JavaScript, including responsive menus, category archives, image sliders, and contact forms.",
+        "Designed the interface in Figma, implemented animations, and integrated a newsletter subscription feature.",
+        "Performed debugging, device testing, and usability refinements to improve navigation and the reading experience."
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Figma"
+      ],
+      "evidenceNote": "Based on the user's resume description. Treated as the same project as the HTML's 'Responsive Content Publishing & Blogging Platform' for deduplication; confirm if these are actually separate codebases. No executable source was supplied for this entry.",
+      "exclusions": [
+        "Do not treat it as the Express/EJS blog, FastAPI blog API, or recipe blog included in the newer kits.",
+        "GitHub Pages hosting, dynamic article filtering, and a specific newsletter backend are not verified."
+      ],
+      "group": "existing-resume",
+      "candidateRepository": "https://github.com/dipenpatel1/responsive-blog-platform",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "art-gallery-static",
+      "title": "Envisage Art Gallery — Frontend Website",
+      "category": "web",
+      "status": "Source available",
+      "summary": "An art gallery interface with artwork imagery, responsive CSS layouts, and an interactive image slideshow.",
+      "bullets": [
+        "Developed an art gallery website using HTML, CSS, and JavaScript to present artwork through an image-led interface.",
+        "Implemented automatic slideshow transitions and clickable slide indicators for browsing featured artwork.",
+        "Organized page layouts, navigation, and artwork assets with CSS media queries for different screen sizes."
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "evidenceNote": "Art-home.html, Art-home.css, style.css, and s.js contain the gallery layout, media queries, and slideshow logic. The kit reports a static preview; this audit did not rerun it.",
+      "exclusions": [
+        "Artwork search/category filtering and lightbox are roadmap features, not demonstrated here.",
+        "No verified commerce backend, checkout, or deployment."
+      ],
+      "group": "kit-addition",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "food-blog-static",
+      "title": "Recipe & Food Blogging Website",
+      "category": "web",
+      "status": "Source available",
+      "summary": "A static food blog with individual recipe pages, shared navigation, image sliders, and responsive styling.",
+      "bullets": [
+        "Built a multi-page food blog with individual recipe articles, an about page, and image-based recipe browsing.",
+        "Implemented JavaScript image sliders and a collapsible navigation menu to support browsing across screen sizes.",
+        "Applied shared CSS layouts and reusable navigation patterns to maintain consistent presentation across recipe pages."
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "evidenceNote": "blog-home.html, food-blog.html, individual recipe HTML files, headerscript.js, slider.js, and CSS media queries support these features. Some missing assets were restored in the supplied kit; this audit did not rerun its preview.",
+      "exclusions": [
+        "No demonstrated recipe search/filter engine, newsletter backend, account system, or content database.",
+        "Relationship to The Daily Loop is not established; keep separate unless the owner confirms they are the same project."
+      ],
+      "group": "kit-addition",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    },
+    {
+      "id": "flutter-spring-chat-prototype",
+      "title": "Flutter & Spring Boot Account Prototype",
+      "category": "mobile",
+      "status": "Prototype",
+      "summary": "A mobile account-flow prototype with Flutter login, registration, and OTP screens plus a Spring Boot user-service backend; chat functionality remains planned.",
+      "bullets": [
+        "Prototyped Flutter screens for registration, login, password recovery, and OTP entry with reusable form components.",
+        "Wrote a Dart HTTP service layer for JSON requests to Spring Boot registration and user-validation endpoints.",
+        "Structured Java user entities, repository queries, and service/controller layers as the backend foundation for the mobile prototype."
+      ],
+      "tech": [
+        "Flutter",
+        "Dart",
+        "Java",
+        "Spring Boot",
+        "Spring Data JPA",
+        "HTTP/JSON"
+      ],
+      "evidenceNote": "frontend/dummy/lib/ contains account screens and service.dart HTTP calls; backend/dummyBackend/src/main/java/ contains user entity/repository/service/controller code. home_page.dart is a HELLO placeholder, not chat. Java controller contains unresolved symbols; build/integration is unverified.",
+      "exclusions": [
+        "No functioning chat UI, WebSocket messaging, or end-to-end mobile chat is demonstrated.",
+        "OTP is a screen/prototype only; secure server-side issue, delivery, expiry, and verification are missing.",
+        "Do not claim secure authentication: recovered user-validation logic compares unencrypted passwords and requires redesign."
+      ],
+      "group": "kit-addition",
+      "candidateRepository": "",
+      "repositoryUrl": ""
+    }
+  ]
+}

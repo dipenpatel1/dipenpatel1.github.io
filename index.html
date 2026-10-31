@@ -1,247 +1,314 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" data-theme="blue">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dipen Patel | Software Systems & Applied AI Engineer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dipen Rajnikant Patel — software systems and applied AI portfolio. Explore projects in machine learning, backend engineering, real-time applications and web development.">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://dipenpatel.runs-on.dev/">
+  <title>Dipen Patel | Software Systems &amp; Applied AI</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1018;--panel:#121b28;--panel2:#172232;--text:#edf3fb;--muted:#a7b6ca;--line:#2b3a4e;--accent:#8cbdff;--strong:#accfff;--ink:#08111d;--wash:#162c49;--max:1180px}
+    :root[data-theme="amber"]{--accent:#f6c47a;--strong:#f9d9a5;--wash:#322919;--ink:#201605}
+    :root[data-theme="green"]{--accent:#88d9b0;--strong:#b2e7cc;--wash:#183329;--ink:#081d12}
+    *{box-sizing:border-box}html{scroll-behavior:auto;scroll-padding-top:115px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:4px}button,input,select{font:inherit}button,select{cursor:pointer}button,a,input,select,summary{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--strong);outline-offset:4px}::selection{background:var(--accent);color:var(--ink)}[hidden]{display:none!important}.wrap{max-width:var(--max);padding-inline:28px;margin-inline:auto}.mono,.eyebrow,.status,.project-number{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.73rem;color:var(--accent);font-weight:700}.muted{color:var(--muted)}.skip-link{position:fixed;left:20px;top:-100px;background:var(--accent);color:var(--ink);padding:12px;z-index:100}.skip-link:focus{top:12px}
+    .site-header{position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line);background:var(--bg)}.header-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{font-weight:800;font-size:1.15rem;letter-spacing:-.03em;text-decoration:none;color:var(--text);white-space:nowrap}.brand span{color:var(--accent)}nav{display:flex;gap:24px;flex-wrap:wrap}nav a{font-size:.86rem;color:var(--muted);text-decoration:none}nav a:hover{color:var(--text)}.theme-label{display:flex;align-items:center;gap:8px;font-size:.75rem;color:var(--muted)}select{background:var(--panel);color:var(--text);border:1px solid var(--line);padding:6px;border-radius:5px;font-size:.75rem}
+    .hero{display:grid;grid-template-columns:1.5fr 1fr;gap:70px;align-items:center;padding-block:88px 76px}.hero h1{font-size:clamp(2.8rem,5.6vw,4.8rem);line-height:1.07;letter-spacing:-.06em;margin:20px 0 24px;font-weight:760}.hero h1 span{color:var(--accent)}.hero .lede{max-width:620px;font-size:1.12rem;color:var(--muted);line-height:1.8}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:11px 19px;border:1px solid var(--line);border-radius:6px;color:var(--text);text-decoration:none;font-size:.9rem;font-weight:650;background:var(--panel)}.button.primary{background:var(--accent);color:var(--ink);border-color:var(--accent)}.button:hover{filter:brightness(1.12)}.hero-note{font-size:.8rem;color:var(--muted);margin-top:24px}.profile-panel{border:1px solid var(--line);background:linear-gradient(150deg,var(--panel2),var(--bg));border-radius:10px;overflow:hidden;box-shadow:0 25px 70px #0003}.panel-bar{display:flex;justify-content:space-between;padding:13px 20px;border-bottom:1px solid var(--line);font-size:.72rem;color:var(--muted)}.panel-body{padding:30px}.profile-monogram{display:flex;align-items:center;justify-content:center;font-size:3rem;font-weight:750;letter-spacing:-.08em;width:92px;height:92px;border:1px solid var(--accent);color:var(--accent);background:var(--wash);border-radius:12px;margin-bottom:25px}.profile-panel h2{font-size:1.12rem;margin:0}.profile-panel p{font-size:.88rem;margin:8px 0 24px;color:var(--muted)}.focus-list{list-style:none;padding:0;margin:0;display:grid;gap:14px;font-size:.86rem}.focus-list li{display:flex;align-items:center;gap:12px}.focus-list span{color:var(--accent);font-size:.72rem}.count-strip{display:flex;border-top:1px solid var(--line);margin-top:28px;padding-top:20px;gap:28px}.count-strip strong{font-size:1.5rem;line-height:1.2;display:block;color:var(--strong)}.count-strip small{color:var(--muted);font-size:.7rem}
+    section.content-section{border-top:1px solid var(--line);padding-block:64px}.section-top{display:flex;align-items:flex-end;justify-content:space-between;gap:25px;margin-bottom:30px}h2{font-size:clamp(1.7rem,3vw,2.3rem);line-height:1.25;letter-spacing:-.035em;margin:8px 0 12px}.section-top p{margin:0;color:var(--muted);max-width:720px;font-size:.93rem}.section-marker{color:var(--muted);font-size:.75rem;white-space:nowrap}.project-toolbar{display:grid;gap:18px;margin-bottom:22px}.search-row{display:flex;gap:16px;align-items:flex-end;justify-content:space-between}.search-field{display:grid;gap:6px;flex:1;max-width:520px}.search-field label{font-size:.78rem;color:var(--muted)}input[type=search]{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:6px;color:var(--text);padding:12px 15px}input::placeholder{color:var(--muted)}.result-count{color:var(--muted);font-size:.8rem;margin:0 0 12px}.filters{display:flex;flex-wrap:wrap;gap:8px}.filter{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:8px 12px;font-size:.78rem}.filter:hover{border-color:var(--accent);color:var(--text)}.filter[aria-pressed=true]{background:var(--wash);color:var(--strong);border-color:var(--accent)}.filter .filter-count{opacity:.8;margin-left:7px;font-size:.7rem}.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.project-card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:24px;min-width:0;transition:border-color .15s}.project-card:hover{border-color:var(--accent)}.card-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:22px}.project-number{font-size:.72rem;color:var(--muted)}.status{font-size:.63rem;line-height:1.4;border:1px solid var(--line);padding:4px 7px;border-radius:4px;color:var(--muted)}.project-card.featured .status{color:var(--accent);border-color:var(--accent)}.project-card .project-category{font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}.project-card h3{font-size:1.08rem;line-height:1.4;letter-spacing:-.015em;margin:0 0 14px}.project-summary{font-size:.86rem;color:var(--muted);margin:0 0 20px;line-height:1.75}.tech{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0 0 22px}.tech li{font-size:.66rem;background:var(--bg);color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:3px 7px}.card-bottom{margin-top:auto}.project-card details{border-top:1px solid var(--line);padding-top:14px;font-size:.8rem;color:var(--muted)}summary{cursor:pointer;color:var(--text);font-weight:550}details ul{padding-left:18px;margin-bottom:5px}details li+li{margin-top:9px}.repo-link{display:inline-block;margin-top:15px;font-size:.8rem}.empty-state{padding:45px;border:1px dashed var(--line);border-radius:8px;text-align:center;color:var(--muted)}.reset{background:none;color:var(--accent);border:0;text-decoration:underline;padding:6px}.noscript{border-left:3px solid var(--accent);padding:10px 16px;color:var(--muted)}
+    .skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}.skill-group{padding-top:18px;border-top:2px solid var(--line)}.skill-group h3{font-size:.95rem;margin:0 0 10px}.skill-group p{font-size:.86rem;color:var(--muted);margin:0}.timeline-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}.timeline-title{font-size:.75rem;text-transform:uppercase;letter-spacing:.13em;color:var(--accent);margin:0 0 24px}.timeline-item{padding-left:22px;border-left:1px solid var(--line);margin-bottom:26px}.timeline-item h3{font-size:.98rem;line-height:1.5;margin:0 0 6px}.timeline-item p{font-size:.86rem;color:var(--muted);margin:3px 0}.timeline-item .date{font-size:.74rem;color:var(--accent)}.contact{background:var(--panel);border-top:1px solid var(--line);padding-block:56px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact h2{margin-top:0}.contact p{color:var(--muted);font-size:.9rem;max-width:480px}.contact-links{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-links a{font-size:.9rem;text-decoration:none;overflow-wrap:anywhere}.contact-links small{display:block;color:var(--muted);font-size:.72rem;margin-bottom:3px}.footer-bottom{padding-block:24px;display:flex;justify-content:space-between;gap:20px;font-size:.72rem;color:var(--muted)}.footer-bottom a{color:var(--muted)}
+    @media(min-width:1000px){.project-card.featured{background:linear-gradient(155deg,var(--wash),var(--panel) 65%)}}
+    @media(max-width:1050px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{gap:35px}.skills-grid{grid-template-columns:repeat(2,1fr)}nav{gap:16px}.theme-label>span{display:none}}
+    @media(max-width:720px){html{scroll-padding-top:140px}.wrap{padding-inline:20px}.header-inner{flex-wrap:wrap;gap:12px;padding-block:14px;min-height:0}nav{order:3;width:100%;justify-content:space-between;gap:10px}nav a{font-size:.73rem}.theme-label{margin-left:auto}.hero{grid-template-columns:1fr;padding-block:48px;gap:32px}.hero h1{font-size:3.1rem}.hero .lede{font-size:1rem}.profile-panel{max-width:100%}.panel-body{padding:24px}.profile-monogram{float:right;width:64px;height:64px;font-size:2.1rem;margin-left:18px}.count-strip{clear:both}.section-top{display:block}.section-marker{display:none}section.content-section{padding-block:45px}.project-grid{grid-template-columns:1fr}.project-card{padding:22px}.search-row{display:block}.result-count{margin:12px 0 0}.timeline-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.contact-links{grid-template-columns:1fr 1fr}.footer-bottom{flex-direction:column;gap:8px}.skills-grid{gap:24px}.filter{font-size:.73rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+    @media print{html{color-scheme:light}body{background:white;color:#111;font-size:10pt}.site-header,.project-toolbar,.actions,.theme-label,.footer-bottom{display:none}.wrap{max-width:none;padding:0}.hero{padding:20px 0;grid-template-columns:1fr}.profile-panel{display:none}.hero h1{font-size:28pt}.hero .lede,.muted,.project-summary,.tech li,.project-card details,.timeline-item p,.contact p{color:#333}.project-grid{grid-template-columns:1fr 1fr}.project-card,.contact{background:white;border-color:#aaa;break-inside:avoid}.project-card h3,.project-category,.status,.eyebrow,a,summary{color:#111!important}.tech li{background:white;border-color:#aaa}.contact-grid{grid-template-columns:1fr 1fr}section.content-section{padding-block:24px}.project-card[hidden]{display:flex!important}}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
-
-  <!-- Top Navigation -->
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#" class="text-xl font-bold tracking-tight text-white">
-        Dipen<span class="text-blue-500">.dev</span>
-      </a>
-      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
-        <a href="#projects" class="hover:text-blue-400 transition">Projects (10)</a>
-        <a href="#experience" class="hover:text-blue-400 transition">Experience & Education</a>
-        <a href="#skills" class="hover:text-blue-400 transition">Tech Stack</a>
-        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
-      </nav>
-      <div class="flex items-center space-x-4">
-        <a href="https://github.com/dipenpatel1" target="_blank" class="text-slate-300 hover:text-white text-lg" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/dipenrpatel/" target="_blank" class="text-slate-300 hover:text-blue-400 text-lg" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home" aria-label="Dipen Patel, home">Dipen<span>.dev</span></a>
+      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Background</a><a href="#contact">Contact</a></nav>
+      <label class="theme-label" for="theme"><span>Accent</span><select id="theme" aria-label="Choose accent color"><option value="blue">Blue</option><option value="amber">Amber</option><option value="green">Green</option></select></label>
     </div>
   </header>
-
-  <!-- Hero Section -->
-  <section class="max-w-6xl mx-auto px-6 py-20 md:py-28">
-    <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
-      M.Eng. Software Systems Engineering @ University of Regina
-    </div>
-    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
-      Dipen Rajnikant Patel
-    </h1>
-    <p class="text-lg md:text-xl text-slate-400 max-w-3xl leading-relaxed mb-8">
-      Software Systems & Applied AI Engineer specializing in <span class="text-slate-200 font-medium">Production MLOps, Explainable AI (XAI), Decentralized Smart Contracts, and Enterprise Full-Stack Systems</span>. Former Data & Software Engineering contributor at <span class="text-slate-200 font-medium">IBM</span>, <span class="text-slate-200 font-medium">NielsenIQ</span>, and <span class="text-slate-200 font-medium">Black iD Solutions</span>.
-    </p>
-    <div class="flex flex-wrap gap-4">
-      <a href="#projects" class="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition shadow-lg shadow-blue-600/25">
-        Explore 10 Engineering Projects
-      </a>
-      <a href="https://github.com/dipenpatel1" target="_blank" class="px-6 py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-sm transition">
-        <i class="fab fa-github mr-2"></i>GitHub Profile
-      </a>
-      <a href="https://www.linkedin.com/in/dipenrpatel/" target="_blank" class="px-6 py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-sm transition">
-        <i class="fab fa-linkedin mr-2 text-blue-400"></i>LinkedIn
-      </a>
-    </div>
-  </section>
-
-  <!-- Filterable Projects Section -->
-  <section id="projects" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/80">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+  <main id="main">
+    <div id="home" class="wrap hero">
       <div>
-        <h2 class="text-3xl font-bold text-white mb-2">Featured Engineering Portfolio</h2>
-        <p class="text-slate-400 text-sm">Graduate (University of Regina M.Eng.) & Undergraduate (B.Tech CSE) Systems</p>
+        <div class="eyebrow">Software systems / Applied AI</div>
+        <h1>Dipen<br><span>Rajnikant Patel.</span></h1>
+        <p class="lede">I work across machine learning, backend systems, and the interfaces that bring them to life. My projects connect data, software engineering, and practical problems.</p>
+        <div class="actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="button" href="https://github.com/dipenpatel1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+        <p class="hero-note">Based in Regina, Saskatchewan, Canada</p>
       </div>
-      <!-- Filter Buttons -->
-      <div class="flex flex-wrap gap-2 mt-4 md:mt-0" id="filter-buttons">
-        <button onclick="filterProjects('all')" class="filter-btn active px-4 py-2 rounded-lg text-xs font-semibold bg-blue-600 text-white transition">All (10)</button>
-        <button onclick="filterProjects('ai')" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 transition">AI, MLOps & Data Science (6)</button>
-        <button onclick="filterProjects('blockchain')" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 transition">Blockchain & Web3 (1)</button>
-        <button onclick="filterProjects('enterprise')" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-slate-700 transition">Enterprise & Full-Stack (3)</button>
-      </div>
-    </div>
-
-    <!-- Project Cards Grid -->
-    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
-  </section>
-
-  <!-- Experience & Education Section -->
-  <section id="experience" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/80">
-    <h2 class="text-3xl font-bold text-white mb-10">Academic & Industry Timeline</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-blue-400 mb-4"><i class="fas fa-graduation-cap mr-2"></i>Education</h3>
-        <div class="space-y-6">
-          <div>
-            <div class="text-xs text-slate-400">2026 – Present | Regina, SK, Canada</div>
-            <div class="font-bold text-white">Master of Engineering in Software Systems Engineering</div>
-            <div class="text-sm text-slate-300">University of Regina</div>
-            <p class="text-xs text-slate-400 mt-1">Coursework: Practical Deep Learning (ENSE 811), Responsible & Applied AI (ENSE 861/885BG), Blockchain Technology (ENSE 885BH), Artificial Intelligence (ENSE 311), Engineering Ethics (ENGG 703).</p>
-          </div>
-          <div>
-            <div class="text-xs text-slate-400">Completed May 2025 | Vadodara, India</div>
-            <div class="font-bold text-white">Bachelor of Technology (B.Tech) in Computer Science & Engineering</div>
-            <div class="text-sm text-slate-300">GSFC University</div>
-          </div>
+      <aside class="profile-panel" aria-label="Profile at a glance">
+        <div class="panel-bar mono"><span>PROFILE / DIPEN</span><span>01</span></div>
+        <div class="panel-body">
+          <div class="profile-monogram" aria-hidden="true">dp.</div>
+          <h2>Engineer. Analyst. Builder.</h2>
+          <p>M.Eng. Software Systems Engineering<br>University of Regina</p>
+          <ul class="focus-list"><li><span>01 /</span> Machine learning &amp; explainability</li><li><span>02 /</span> APIs &amp; real-time applications</li><li><span>03 /</span> Web &amp; enterprise systems</li></ul>
+          <div class="count-strip"><div><strong>21</strong><small>Project entries</small></div><div><strong>7</strong><small>Areas of work</small></div></div>
         </div>
-      </div>
-
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-blue-400 mb-4"><i class="fas fa-briefcase mr-2"></i>Industry Experience</h3>
-        <div class="space-y-4 text-sm">
-          <div>
-            <div class="font-bold text-white">Junior Data Engineer — IBM</div>
-            <div class="text-xs text-slate-400">Data Engineering, ETL Pipelines & Scalable Analytics</div>
-          </div>
-          <div>
-            <div class="font-bold text-white">Associate Data Analyst — NielsenIQ</div>
-            <div class="text-xs text-slate-400">Market Research Analytics, Data Modeling & Reporting</div>
-          </div>
-          <div>
-            <div class="font-bold text-white">Junior Software Engineer / Web Dev Intern — Black iD Solutions</div>
-            <div class="text-xs text-slate-400">Full-Stack Web Development, CMS & Responsive UI Engineering</div>
-          </div>
-        </div>
-      </div>
+      </aside>
     </div>
-  </section>
-
-  <!-- Contact Footer -->
-  <footer id="contact" class="border-t border-slate-800 bg-slate-900/40 py-12">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div>
-        <div class="text-lg font-bold text-white">Dipen Rajnikant Patel</div>
-        <div class="text-sm text-slate-400">Regina, Saskatchewan, Canada · <a href="mailto:dipenrpatel1@gmail.com" class="text-blue-400 hover:underline">dipenrpatel1@gmail.com</a></div>
+    <section id="projects" class="wrap content-section" aria-labelledby="projects-title">
+      <div class="section-top"><div><div class="eyebrow">Selected work &amp; project archive</div><h2 id="projects-title">From experiments to applications.</h2><p>Explore academic projects, web experiences, and applications in development. Each entry identifies its current stage and technical focus.</p></div><span class="section-marker mono">01 / PROJECTS</span></div>
+      <div class="project-toolbar" id="project-toolbar" hidden>
+        <div class="search-row"><div class="search-field"><label for="project-search">Search projects or technologies</label><input id="project-search" type="search" placeholder="Try Python, React, healthcare…" autocomplete="off" aria-controls="project-grid"></div><p class="result-count" id="result-count" aria-live="polite" aria-atomic="true">21 projects</p></div>
+        <div class="filters" role="group" aria-label="Filter projects by area"><button type="button" class="filter" data-filter="all" aria-pressed="true">All projects<span class="filter-count">21</span></button>
+<button type="button" class="filter" data-filter="ai" aria-pressed="false">AI &amp; Data<span class="filter-count">6</span></button>
+<button type="button" class="filter" data-filter="web" aria-pressed="false">Web &amp; UI<span class="filter-count">5</span></button>
+<button type="button" class="filter" data-filter="backend" aria-pressed="false">Backend &amp; Tools<span class="filter-count">4</span></button>
+<button type="button" class="filter" data-filter="realtime" aria-pressed="false">Real-Time Apps<span class="filter-count">2</span></button>
+<button type="button" class="filter" data-filter="enterprise" aria-pressed="false">Enterprise<span class="filter-count">2</span></button>
+<button type="button" class="filter" data-filter="blockchain" aria-pressed="false">Blockchain<span class="filter-count">1</span></button>
+<button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile<span class="filter-count">1</span></button></div>
       </div>
-      <div class="flex space-x-6 text-sm text-slate-400">
-        <a href="https://github.com/dipenpatel1" target="_blank" class="hover:text-white"><i class="fab fa-github mr-1"></i>github.com/dipenpatel1</a>
-        <a href="https://www.linkedin.com/in/dipenrpatel/" target="_blank" class="hover:text-white"><i class="fab fa-linkedin mr-1"></i>linkedin.com/in/dipenrpatel</a>
-      </div>
-    </div>
-  </footer>
+      <noscript><p class="noscript">All projects are shown below. Enable JavaScript to search, filter, or change the accent color.</p></noscript>
+      <div class="project-grid" id="project-grid">
+        <article class="project-card featured" id="xai-predictive-maintenance" data-category="ai" aria-labelledby="title-xai-predictive-maintenance">
+          <div class="card-top"><span class="project-number">01 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">AI &amp; Data</p>
+          <h3 id="title-xai-predictive-maintenance">Predictive Maintenance with Explainable AI</h3>
+          <p class="project-summary">An equipment-failure prediction pipeline using the AI4I 2020 dataset, machine learning classifiers, neural networks, and SHAP/LIME explanations.</p>
+          <ul class="tech" aria-label="Technologies"><li>Python</li><li>Machine Learning</li><li>Neural Networks</li><li>SHAP</li><li>LIME</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Predictive Maintenance with Explainable AI</span></summary><ul><li>Developed an equipment-failure prediction pipeline using the AI4I 2020 dataset and machine learning classifiers.</li><li>Used neural network models to explore industrial equipment failure prediction alongside classical machine learning approaches.</li><li>Applied SHAP and LIME to interpret model predictions at the dataset and individual-instance levels.</li></ul></details></div>
+        </article>
 
+        <article class="project-card featured" id="healthcare-access-gbm-llm-policy" data-category="ai" aria-labelledby="title-healthcare-access-gbm-llm-policy">
+          <div class="card-top"><span class="project-number">02 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">AI &amp; Data</p>
+          <h3 id="title-healthcare-access-gbm-llm-policy">Socio-Economic Data Analysis on Healthcare Access &amp; Outcomes</h3>
+          <p class="project-summary">World Bank data analysis and machine learning to explore healthcare access, predict health outcomes, and generate policy-oriented insights.</p>
+          <ul class="tech" aria-label="Technologies"><li>Python</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>LightGBM</li><li>CatBoost</li><li>XGBoost</li><li>Plotly</li><li>Seaborn</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Socio-Economic Data Analysis on Healthcare Access &amp; Outcomes</span></summary><ul><li>Analyzed World Bank datasets to examine relationships between socio-economic factors, healthcare access, and health outcomes in low-income communities.</li><li>Developed a machine learning pipeline using LightGBM, CatBoost, and XGBoost to predict health outcomes from socio-economic indicators.</li><li>Developed an LLM-based insight-generation layer to translate analytical findings into targeted observations for healthcare policymakers.</li></ul></details></div>
+        </article>
+
+        <article class="project-card featured" id="stock-forecasting-lstm-arima-sentiment" data-category="ai" aria-labelledby="title-stock-forecasting-lstm-arima-sentiment">
+          <div class="card-top"><span class="project-number">03 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">AI &amp; Data</p>
+          <h3 id="title-stock-forecasting-lstm-arima-sentiment">Stock Price Prediction &amp; Sentiment Analysis System</h3>
+          <p class="project-summary">Stock forecasting with statistical and deep learning models, financial-news sentiment analysis, and an interactive Streamlit dashboard.</p>
+          <ul class="tech" aria-label="Technologies"><li>Python</li><li>LSTM</li><li>ARIMA</li><li>VADER</li><li>Streamlit</li><li>NewsAPI</li><li>yfinance</li><li>Scikit-learn</li><li>PyTorch</li><li>TensorFlow</li><li>Plotly</li><li>Matplotlib</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Stock Price Prediction &amp; Sentiment Analysis System</span></summary><ul><li>Developed a stock forecasting system combining LSTM and ARIMA models with VADER sentiment analysis of financial news.</li><li>Built an interactive Streamlit dashboard integrating yfinance and NewsAPI, with stock-price and sentiment visualizations using Plotly and Matplotlib.</li><li>Evaluated Random Forest regression and optimized deep learning models with PyTorch to compare approaches to stock-price prediction.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="heart-disease-mlops-pipeline" data-category="ai" aria-labelledby="title-heart-disease-mlops-pipeline">
+          <div class="card-top"><span class="project-number">04 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">AI &amp; Data</p>
+          <h3 id="title-heart-disease-mlops-pipeline">Heart Disease Prediction MLOps Pipeline</h3>
+          <p class="project-summary">A heart-disease risk-prediction workflow with DVC versioning, MLflow experiment tracking, and Docker-based model inference.</p>
+          <ul class="tech" aria-label="Technologies"><li>Python</li><li>Deep Learning</li><li>DVC</li><li>MLflow</li><li>Docker</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Heart Disease Prediction MLOps Pipeline</span></summary><ul><li>Developed a heart-disease risk-prediction workflow using Python and deep learning models.</li><li>Used DVC to version datasets and models and MLflow to track model experiments and hyperparameters.</li><li>Containerized model inference with Docker to support reproducible execution of the prediction workflow.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="blockchain-supply-chain-hardhat" data-category="blockchain" aria-labelledby="title-blockchain-supply-chain-hardhat">
+          <div class="card-top"><span class="project-number">05 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">Blockchain</p>
+          <h3 id="title-blockchain-supply-chain-hardhat">Decentralized Supply Chain Smart Contract System</h3>
+          <p class="project-summary">Ethereum smart contracts for multi-party supply-chain tracking, developed with Solidity and Hardhat and accompanied by a security-analysis report.</p>
+          <ul class="tech" aria-label="Technologies"><li>Solidity</li><li>Ethereum</li><li>Hardhat</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Decentralized Supply Chain Smart Contract System</span></summary><ul><li>Developed Ethereum smart contracts in Solidity to model multi-party supply-chain tracking workflows.</li><li>Used Hardhat as the development environment for the smart-contract implementation.</li><li>Prepared a smart-contract security analysis in IEEE format to document security considerations for the supply-chain system.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="computer-vision-scene-recognition" data-category="ai" aria-labelledby="title-computer-vision-scene-recognition">
+          <div class="card-top"><span class="project-number">06 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">AI &amp; Data</p>
+          <h3 id="title-computer-vision-scene-recognition">Computer Vision &amp; Scene Recognition Suite</h3>
+          <p class="project-summary">Computer vision experiments spanning camera calibration, SIFT descriptors, bag-of-words classification, and convolutional neural networks.</p>
+          <ul class="tech" aria-label="Technologies"><li>Python</li><li>OpenCV</li><li>SIFT</li><li>Bag of Words</li><li>SVM</li><li>PyTorch</li><li>CNN</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Computer Vision &amp; Scene Recognition Suite</span></summary><ul><li>Implemented computer vision experiments using OpenCV, including camera calibration and SIFT feature extraction.</li><li>Built a scene-recognition approach using visual bag-of-words representations and support vector machine classification.</li><li>Compared classical visual-recognition methods with convolutional neural networks implemented in PyTorch.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="classical-ai-search-and-csp" data-category="ai" aria-labelledby="title-classical-ai-search-and-csp">
+          <div class="card-top"><span class="project-number">07 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">AI &amp; Data</p>
+          <h3 id="title-classical-ai-search-and-csp">Classical AI Toolkit — Search, Sudoku &amp; Bayesian Networks</h3>
+          <p class="project-summary">A Python toolkit exploring heuristic and cost-based search, constraint-satisfaction Sudoku solving, and Bayesian-network inference.</p>
+          <ul class="tech" aria-label="Technologies"><li>Python</li><li>A* Search</li><li>Uniform Cost Search</li><li>Constraint Satisfaction</li><li>Backtracking</li><li>Bayesian Networks</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Classical AI Toolkit — Search, Sudoku &amp; Bayesian Networks</span></summary><ul><li>Implemented A* and Uniform Cost Search algorithms for pathfinding in a modular Python toolkit.</li><li>Developed a Sudoku solver using backtracking and a constraint-satisfaction formulation.</li><li>Implemented Bayesian-network inference to explore probabilistic reasoning within the AI toolkit.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="library-management-php-mysql" data-category="enterprise" aria-labelledby="title-library-management-php-mysql">
+          <div class="card-top"><span class="project-number">08 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">Enterprise</p>
+          <h3 id="title-library-management-php-mysql">Library Management System — Full-Stack Web Application</h3>
+          <p class="project-summary">A PHP and MySQL library application with user and administrator workflows for catalog search, circulation, inventory, fines, and reminders.</p>
+          <ul class="tech" aria-label="Technologies"><li>PHP</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Library Management System — Full-Stack Web Application</span></summary><ul><li>Built a dual-role library application with user and administrator workflows for book search, issue and return, inventory management, fines, and feedback.</li><li>Implemented the backend with PHP and MySQL and created responsive interfaces using HTML, CSS, JavaScript, and Bootstrap.</li><li>Designed the application using ER and UML diagrams and incorporated email reminders to support library circulation workflows.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="university-asset-tracker-dotnet" data-category="enterprise" aria-labelledby="title-university-asset-tracker-dotnet">
+          <div class="card-top"><span class="project-number">09 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">Enterprise</p>
+          <h3 id="title-university-asset-tracker-dotnet">Inventory Management System — University Asset Tracker</h3>
+          <p class="project-summary">A university asset tracker covering departmental inventory, maintenance records, user roles, and stock alerts with a C# and ASP.NET backend.</p>
+          <ul class="tech" aria-label="Technologies"><li>C#</li><li>ASP.NET</li><li>MS SQL Server</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Inventory Management System — University Asset Tracker</span></summary><ul><li>Developed a university asset-management system with modules for departmental inventory tracking, maintenance records, user roles, and stock alerts.</li><li>Implemented the application using C# and ASP.NET with MS SQL Server to organize and manage institutional asset data.</li><li>Designed a structured relational database schema and an administrative interface for inventory and maintenance workflows.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="realtime-chat-fullstack" data-category="realtime" aria-labelledby="title-realtime-chat-fullstack">
+          <div class="card-top"><span class="project-number">10 / 21</span><span class="status">In development</span></div>
+          <p class="project-category">Real-Time Apps</p>
+          <h3 id="title-realtime-chat-fullstack">Real-Time Chat — Full-Stack Application</h3>
+          <p class="project-summary">A React and Express messaging application with Socket.IO event handlers, persisted message history, and account authentication modules.</p>
+          <ul class="tech" aria-label="Technologies"><li>React</li><li>Node.js</li><li>Express</li><li>Socket.IO</li><li>Sequelize</li><li>PostgreSQL</li><li>Redis</li><li>JWT</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Real-Time Chat — Full-Stack Application</span></summary><ul><li>Developed React chat and account interfaces with an Express backend and Socket.IO messaging event handlers.</li><li>Modeled users and messages in PostgreSQL through Sequelize and implemented APIs for storing messages and retrieving conversation history.</li><li>Added JWT login and socket authentication logic, typing-status events, and message-delivery state handlers.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="live-polling-system" data-category="realtime" aria-labelledby="title-live-polling-system">
+          <div class="card-top"><span class="project-number">11 / 21</span><span class="status">In development</span></div>
+          <p class="project-category">Real-Time Apps</p>
+          <h3 id="title-live-polling-system">Live Polling &amp; Voting System</h3>
+          <p class="project-summary">A React polling application with poll creation, voting, PostgreSQL-backed results, and Socket.IO update events.</p>
+          <ul class="tech" aria-label="Technologies"><li>React</li><li>Node.js</li><li>Express</li><li>Socket.IO</li><li>Sequelize</li><li>PostgreSQL</li><li>JavaScript</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Live Polling &amp; Voting System</span></summary><ul><li>Built React interfaces for creating polls, selecting options, and displaying vote counts.</li><li>Implemented Express endpoints and Sequelize models to store poll questions, options, and votes in PostgreSQL.</li><li>Added request validation and Socket.IO broadcasts for new polls and updated results.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="student-management-api" data-category="backend" aria-labelledby="title-student-management-api">
+          <div class="card-top"><span class="project-number">12 / 21</span><span class="status">In development</span></div>
+          <p class="project-category">Backend &amp; Tools</p>
+          <h3 id="title-student-management-api">Student &amp; Academic Records Management API</h3>
+          <p class="project-summary">An Express API for student, parent, subject, and grade records, with separate administrator and student route groups.</p>
+          <ul class="tech" aria-label="Technologies"><li>Node.js</li><li>Express</li><li>Sequelize</li><li>PostgreSQL</li><li>Redis</li><li>JWT</li><li>JavaScript</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Student &amp; Academic Records Management API</span></summary><ul><li>Developed Express routes and controllers for managing student profiles, parent records, subjects, and grades.</li><li>Designed Sequelize models and relational associations for PostgreSQL-based academic records.</li><li>Separated administrator and student API flows and added request validation, profile updates, and soft-delete operations.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="blogging-express-ejs" data-category="web" aria-labelledby="title-blogging-express-ejs">
+          <div class="card-top"><span class="project-number">13 / 21</span><span class="status">In development</span></div>
+          <p class="project-category">Web &amp; UI</p>
+          <h3 id="title-blogging-express-ejs">Express &amp; EJS Blogging Platform</h3>
+          <p class="project-summary">A server-rendered blogging application with article creation, category browsing, search, and MongoDB-backed content models.</p>
+          <ul class="tech" aria-label="Technologies"><li>Node.js</li><li>Express</li><li>EJS</li><li>MongoDB</li><li>Mongoose</li><li>JavaScript</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Express &amp; EJS Blogging Platform</span></summary><ul><li>Developed a server-rendered blogging application with Express and EJS templates for article creation, article viewing, and account screens.</li><li>Modeled users, posts, categories, and contact submissions with MongoDB and Mongoose.</li><li>Implemented category-based article queries, paginated listings, and title/content search to help readers discover posts.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="blogging-api-fastapi" data-category="backend" aria-labelledby="title-blogging-api-fastapi">
+          <div class="card-top"><span class="project-number">14 / 21</span><span class="status">In development</span></div>
+          <p class="project-category">Backend &amp; Tools</p>
+          <h3 id="title-blogging-api-fastapi">FastAPI Authentication Backend for a Blogging Platform</h3>
+          <p class="project-summary">The account-service foundation of a blogging API, organized into FastAPI routes, validation, security helpers, ORM models, and migrations.</p>
+          <ul class="tech" aria-label="Technologies"><li>Python</li><li>FastAPI</li><li>Pydantic</li><li>SQLAlchemy</li><li>Alembic</li><li>PostgreSQL</li><li>JWT</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: FastAPI Authentication Backend for a Blogging Platform</span></summary><ul><li>Structured a FastAPI backend into API, validation, service, security, and database layers for a blogging platform&#39;s account service.</li><li>Implemented registration, login, and token-refresh route logic with Pydantic validation and password-hashing helpers.</li><li>Defined a PostgreSQL user model with SQLAlchemy and Alembic migrations, alongside application health and API documentation endpoints.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="django-task-manager" data-category="backend" aria-labelledby="title-django-task-manager">
+          <div class="card-top"><span class="project-number">15 / 21</span><span class="status">In development</span></div>
+          <p class="project-category">Backend &amp; Tools</p>
+          <h3 id="title-django-task-manager">Django Task Management REST API</h3>
+          <p class="project-summary">A Django REST API for user-associated tasks with due dates, priority, completion state, status filtering, and soft deletion.</p>
+          <ul class="tech" aria-label="Technologies"><li>Python</li><li>Django</li><li>Django REST Framework</li><li>PostgreSQL</li><li>Simple JWT</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Django Task Management REST API</span></summary><ul><li>Developed Django REST Framework endpoints for creating, listing, updating, completing, and soft-deleting tasks.</li><li>Modeled task ownership, due dates, priorities, and status fields with Django ORM and PostgreSQL configuration.</li><li>Added JWT-based account endpoints, serializers, request validation, and user-scoped queries with status filtering.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="qr-attendance-generator" data-category="backend" aria-labelledby="title-qr-attendance-generator">
+          <div class="card-top"><span class="project-number">16 / 21</span><span class="status">Source available</span></div>
+          <p class="project-category">Backend &amp; Tools</p>
+          <h3 id="title-qr-attendance-generator">QR Attendance Identifier Generator</h3>
+          <p class="project-summary">A Python command-line utility that converts attendance identifiers into QR images with input validation and configurable output paths.</p>
+          <ul class="tech" aria-label="Technologies"><li>Python</li><li>qrcode</li><li>Pillow</li><li>argparse</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: QR Attendance Identifier Generator</span></summary><ul><li>Created a Python utility to encode attendance identifiers as QR images using qrcode and Pillow.</li><li>Added command-line options for identifier input and image output, including automatic creation of destination folders.</li><li>Validated empty input and used automatic QR sizing to accommodate identifiers of different lengths.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="hendecagon-event-planners" data-category="web" aria-labelledby="title-hendecagon-event-planners">
+          <div class="card-top"><span class="project-number">17 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">Web &amp; UI</p>
+          <h3 id="title-hendecagon-event-planners">Hendecagon Event Planners — Event Management Website</h3>
+          <p class="project-summary">A responsive event-planning website with services, blog, gallery, and contact pages, developed as part of a six-member team.</p>
+          <ul class="tech" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>WordPress</li><li>Canva</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Hendecagon Event Planners — Event Management Website</span></summary><ul><li>Developed a responsive event-planning website with Home, Services, Blog, Gallery, and Contact sections using HTML, CSS, JavaScript, and WordPress.</li><li>Created custom interface elements and Canva visuals, including testimonial carousels and image sliders.</li><li>Collaborated in a six-member team on domain hosting, basic SEO, and frontend debugging to improve the website&#39;s presentation and usability.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="responsive-blog-platform" data-category="web" aria-labelledby="title-responsive-blog-platform">
+          <div class="card-top"><span class="project-number">18 / 21</span><span class="status">Academic project</span></div>
+          <p class="project-category">Web &amp; UI</p>
+          <h3 id="title-responsive-blog-platform">The Daily Loop — Blogging Website</h3>
+          <p class="project-summary">A personal blogging website with responsive navigation, category archives, image sliders, animations, and newsletter subscription features.</p>
+          <ul class="tech" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: The Daily Loop — Blogging Website</span></summary><ul><li>Built a personal blogging website with HTML, CSS, and JavaScript, including responsive menus, category archives, image sliders, and contact forms.</li><li>Designed the interface in Figma, implemented animations, and integrated a newsletter subscription feature.</li><li>Performed debugging, device testing, and usability refinements to improve navigation and the reading experience.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="art-gallery-static" data-category="web" aria-labelledby="title-art-gallery-static">
+          <div class="card-top"><span class="project-number">19 / 21</span><span class="status">Source available</span></div>
+          <p class="project-category">Web &amp; UI</p>
+          <h3 id="title-art-gallery-static">Envisage Art Gallery — Frontend Website</h3>
+          <p class="project-summary">An art gallery interface with artwork imagery, responsive CSS layouts, and an interactive image slideshow.</p>
+          <ul class="tech" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Envisage Art Gallery — Frontend Website</span></summary><ul><li>Developed an art gallery website using HTML, CSS, and JavaScript to present artwork through an image-led interface.</li><li>Implemented automatic slideshow transitions and clickable slide indicators for browsing featured artwork.</li><li>Organized page layouts, navigation, and artwork assets with CSS media queries for different screen sizes.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="food-blog-static" data-category="web" aria-labelledby="title-food-blog-static">
+          <div class="card-top"><span class="project-number">20 / 21</span><span class="status">Source available</span></div>
+          <p class="project-category">Web &amp; UI</p>
+          <h3 id="title-food-blog-static">Recipe &amp; Food Blogging Website</h3>
+          <p class="project-summary">A static food blog with individual recipe pages, shared navigation, image sliders, and responsive styling.</p>
+          <ul class="tech" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Recipe &amp; Food Blogging Website</span></summary><ul><li>Built a multi-page food blog with individual recipe articles, an about page, and image-based recipe browsing.</li><li>Implemented JavaScript image sliders and a collapsible navigation menu to support browsing across screen sizes.</li><li>Applied shared CSS layouts and reusable navigation patterns to maintain consistent presentation across recipe pages.</li></ul></details></div>
+        </article>
+
+        <article class="project-card" id="flutter-spring-chat-prototype" data-category="mobile" aria-labelledby="title-flutter-spring-chat-prototype">
+          <div class="card-top"><span class="project-number">21 / 21</span><span class="status">Prototype</span></div>
+          <p class="project-category">Mobile</p>
+          <h3 id="title-flutter-spring-chat-prototype">Flutter &amp; Spring Boot Account Prototype</h3>
+          <p class="project-summary">A mobile account-flow prototype with Flutter login, registration, and OTP screens plus a Spring Boot user-service backend; chat functionality remains planned.</p>
+          <ul class="tech" aria-label="Technologies"><li>Flutter</li><li>Dart</li><li>Java</li><li>Spring Boot</li><li>Spring Data JPA</li><li>HTTP/JSON</li></ul>
+          <div class="card-bottom"><details><summary>Project details<span class="sr-only">: Flutter &amp; Spring Boot Account Prototype</span></summary><ul><li>Prototyped Flutter screens for registration, login, password recovery, and OTP entry with reusable form components.</li><li>Wrote a Dart HTTP service layer for JSON requests to Spring Boot registration and user-validation endpoints.</li><li>Structured Java user entities, repository queries, and service/controller layers as the backend foundation for the mobile prototype.</li></ul></details></div>
+        </article></div>
+      <div class="empty-state" id="empty-state" hidden><p>No projects match your search.</p><button type="button" class="reset" id="reset-search">Clear search and filters</button></div>
+    </section>
+    <section id="skills" class="wrap content-section" aria-labelledby="skills-title">
+      <div class="section-top"><div><div class="eyebrow">Tools behind the work</div><h2 id="skills-title">Technical toolkit.</h2><p>Technologies used across the projects in this portfolio.</p></div><span class="section-marker mono">02 / SKILLS</span></div>
+      <div class="skills-grid">
+        <div class="skill-group"><h3>AI &amp; data</h3><p>Python, Pandas, NumPy, Scikit-learn, PyTorch, TensorFlow, gradient boosting, SHAP, LIME, Plotly</p></div>
+        <div class="skill-group"><h3>Web &amp; interfaces</h3><p>HTML, CSS, JavaScript, React, EJS, Bootstrap, WordPress, Figma, Flutter</p></div>
+        <div class="skill-group"><h3>Backend &amp; storage</h3><p>Node.js, Express, FastAPI, Django, PHP, ASP.NET, Spring Boot, SQL, MongoDB, Redis</p></div>
+        <div class="skill-group"><h3>Engineering tools</h3><p>Git, Docker, DVC, MLflow, Socket.IO, Solidity, Hardhat, SQLAlchemy, Sequelize</p></div>
+      </div>
+    </section>
+    <section id="experience" class="wrap content-section" aria-labelledby="background-title">
+      <div class="section-top"><div><div class="eyebrow">Learning &amp; experience</div><h2 id="background-title">An engineering foundation.</h2></div><span class="section-marker mono">03 / BACKGROUND</span></div>
+      <div class="timeline-grid">
+        <div><h3 class="timeline-title">Education</h3><div class="timeline-item"><p class="date">Expected December 2027 · Regina, Canada</p><h3>Master of Engineering<br>Software Systems Engineering</h3><p>University of Regina</p></div><div class="timeline-item"><p class="date">Completed May 2025 · Vadodara, India</p><h3>Bachelor of Technology<br>Computer Science &amp; Engineering</h3><p>GSFC University</p></div></div>
+        <div><h3 class="timeline-title">Industry experience</h3><div class="timeline-item"><h3>Junior Data Engineer · IBM</h3><p>Data engineering, ETL pipelines, and analytics.</p></div><div class="timeline-item"><h3>Associate Data Analyst · NielsenIQ</h3><p>Market research analytics, data modeling, and reporting.</p></div><div class="timeline-item"><h3>Junior Software Engineer / Web Development Intern</h3><p>Black iD Solutions · Web development, CMS, and responsive interfaces.</p></div></div>
+      </div>
+    </section>
+    <section id="contact" class="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><div class="eyebrow">Get in touch</div><h2 id="contact-title">Let’s connect.</h2><p>For conversations about software systems, applied AI, or the work in this portfolio.</p><p>Regina, Saskatchewan, Canada</p></div><div class="contact-links"><a href="mailto:dipenrpatel1@gmail.com"><small>Email</small>dipenrpatel1@gmail.com</a><a href="tel:+13065019385"><small>Phone</small>+1 (306) 501-9385</a><a href="https://github.com/dipenpatel1" target="_blank" rel="noopener noreferrer"><small>GitHub</small>dipenpatel1 ↗</a><a href="https://www.linkedin.com/in/dipenrpatel/" target="_blank" rel="noopener noreferrer"><small>LinkedIn</small>dipenrpatel ↗</a></div></div></section>
+  </main>
+  <footer class="wrap footer-bottom"><span>© <span id="year">2026</span> Dipen Rajnikant Patel</span><a href="#home">Back to top ↑</a></footer>
   <script>
-    const projects = [
-      {
-        title: "Predictive Maintenance with Explainable AI (XAI)",
-        category: "ai",
-        badge: "UofR Master's · ENSE 861/885BG",
-        desc: "End-to-end industrial equipment failure diagnostic pipeline on the AI4I 2020 dataset pairing Neural Networks & ML classifiers with SHAP and LIME for global and instance-level root-cause transparency.",
-        tech: ["Python", "SHAP", "LIME", "Deep Learning", "AI4I 2020"],
-        repo: "https://github.com/dipenpatel1/xai-predictive-maintenance"
-      },
-      {
-        title: "Heart Disease Prediction MLOps Pipeline",
-        category: "ai",
-        badge: "UofR Master's · ENSE 811",
-        desc: "Reproducible clinical risk prediction pipeline orchestrating DVC for dataset/model versioning, MLflow for hyperparameter tracking, and Docker for containerized inference.",
-        tech: ["Python", "DVC", "MLflow", "Docker", "Deep Learning"],
-        repo: "https://github.com/dipenpatel1/heart-disease-mlops-pipeline"
-      },
-      {
-        title: "Socio-Economic Healthcare Access & LLM Policy Engine",
-        category: "ai",
-        badge: "UofR Master's · ENSE 861",
-        desc: "Responsible AI pipeline benchmarking LightGBM, CatBoost, and XGBoost on healthcare determinants with demographic fairness auditing and a custom LLM layer for policy generation.",
-        tech: ["LightGBM", "CatBoost", "XGBoost", "Custom LLM", "Fairness Audit"],
-        repo: "https://github.com/dipenpatel1/healthcare-access-gbm-llm-policy"
-      },
-      {
-        title: "Decentralized Supply Chain Smart Contract System",
-        category: "blockchain",
-        badge: "UofR Master's · ENSE 885BH",
-        desc: "Ethereum smart contract suite built in Solidity and Hardhat for tamper-proof multi-party supply chain tracking, paired with an IEEE-formatted smart contract security analysis paper.",
-        tech: ["Solidity", "Ethereum", "Hardhat", "Smart Contract Security"],
-        repo: "https://github.com/dipenpatel1/blockchain-supply-chain-hardhat"
-      },
-      {
-        title: "Hybrid Stock Price Forecasting (LSTM + ARIMA + VADER)",
-        category: "ai",
-        badge: "B.Tech CSE · Flagship AI",
-        desc: "Multi-modal financial forecasting engine combining statistical ARIMA and stacked LSTM networks with daily financial news sentiment scored via NLTK VADER (R² > 0.96).",
-        tech: ["Python", "TensorFlow LSTM", "ARIMA", "NLTK VADER", "Time-Series"],
-        repo: "https://github.com/dipenpatel1/stock-forecasting-lstm-arima-sentiment"
-      },
-      {
-        title: "Enterprise University Asset & Inventory Tracker",
-        category: "enterprise",
-        badge: "B.Tech CSE · Enterprise .NET",
-        desc: "Role-based campus hardware inventory and preventive maintenance lifecycle system engineered with C#, ASP.NET MVC, and normalized MS SQL Server relational schemas.",
-        tech: ["C#", "ASP.NET", "MS SQL Server", "RBAC", "MVC"],
-        repo: "https://github.com/dipenpatel1/university-asset-tracker-dotnet"
-      },
-      {
-        title: "Computer Vision & Scene Recognition Suite",
-        category: "ai",
-        badge: "UofR Master's · ENSE 811 CV",
-        desc: "Visual recognition benchmark comparing classical computer vision (Camera Calibration, SIFT keypoints, Bag-of-Words + SVM) against Deep Convolutional Neural Networks.",
-        tech: ["Python", "OpenCV", "SIFT", "BoW + SVM", "PyTorch CNN"],
-        repo: "https://github.com/dipenpatel1/computer-vision-scene-recognition"
-      },
-      {
-        title: "Classical AI: Heuristic Search, CSP Sudoku & Bayes' Nets",
-        category: "ai",
-        badge: "UofR Master's · ENSE 311",
-        desc: "Modular AI toolkit featuring A* and Uniform Cost Search pathfinding, a Backtracking Constraint Satisfaction Problem (CSP) Sudoku solver, and Bayesian network inference.",
-        tech: ["Python", "A* Search", "CSP Backtracking", "Bayesian Networks"],
-        repo: "https://github.com/dipenpatel1/classical-ai-search-and-csp"
-      },
-      {
-        title: "Containerized Full-Stack Library Management System",
-        category: "enterprise",
-        badge: "B.Tech CSE · Full-Stack Web",
-        desc: "Dual-portal (Admin/Student) library catalog, book circulation, and automated fine calculation system packaged with Docker Compose (PHP 8.3, Apache, MySQL 8.0).",
-        tech: ["PHP 8.3", "MySQL 8.0", "Docker Compose", "JavaScript"],
-        repo: "https://github.com/dipenpatel1/library-management-php-mysql"
-      },
-      {
-        title: "Responsive Content Publishing & Blogging Platform",
-        category: "enterprise",
-        badge: "B.Tech CSE · Frontend Web",
-        desc: "Lightweight, responsive multi-page publishing platform featuring dynamic DOM rendering, article filtering, and clean reading typography.",
-        tech: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
-        repo: "https://github.com/dipenpatel1/responsive-blog-platform"
+    (() => {
+      'use strict';
+      const cards = [...document.querySelectorAll('.project-card')];
+      const filters = [...document.querySelectorAll('.filter')];
+      const search = document.getElementById('project-search');
+      const count = document.getElementById('result-count');
+      let category = 'all';
+      function updateProjects() {
+        const words = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+        let shown = 0;
+        for (const card of cards) {
+          const matches = (category === 'all' || card.dataset.category === category) && words.every(word => card.textContent.toLocaleLowerCase().includes(word));
+          card.hidden = !matches;
+          if (matches) shown++;
+        }
+        for (const button of filters) button.setAttribute('aria-pressed', String(button.dataset.filter === category));
+        count.textContent = `${shown} of ${cards.length} projects`;
+        document.getElementById('empty-state').hidden = shown !== 0;
       }
-    ];
-
-    function renderProjects(filter = 'all') {
-      const grid = document.getElementById('projects-grid');
-      const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
-      grid.innerHTML = filtered.map(p => `
-        <div class="bg-slate-900/70 border border-slate-800 hover:border-blue-500/50 rounded-xl p-6 flex flex-col justify-between transition group">
-          <div>
-            <div class="flex justify-between items-start gap-4 mb-3">
-              <span class="text-xs font-medium px-2.5 py-1 rounded bg-slate-800 text-blue-400 border border-slate-700">${p.badge}</span>
-              <a href="${p.repo}" target="_blank" class="text-slate-400 group-hover:text-blue-400 text-sm font-medium inline-flex items-center">
-                <i class="fab fa-github mr-1.5"></i>Code <i class="fas fa-arrow-up-right-from-square ml-1 text-xs"></i>
-              </a>
-            </div>
-            <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition">${p.title}</h3>
-            <p class="text-sm text-slate-400 leading-relaxed mb-4">${p.desc}</p>
-          </div>
-          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800/80">
-            ${p.tech.map(t => `<span class="text-xs px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">${t}</span>`).join('')}
-          </div>
-        </div>
-      `).join('');
-    }
-
-    function filterProjects(category) {
-      renderProjects(category);
-    }
-
-    renderProjects();
+      filters.forEach(button => button.addEventListener('click', () => { category = button.dataset.filter; updateProjects(); }));
+      search.addEventListener('input', updateProjects);
+      document.getElementById('reset-search').addEventListener('click', () => { category = 'all'; search.value = ''; updateProjects(); search.focus(); });
+      document.getElementById('project-toolbar').hidden = false;
+      const theme = document.getElementById('theme');
+      const allowedThemes = ['blue', 'amber', 'green'];
+      try { const saved = localStorage.getItem('dipen-portfolio-theme'); if (allowedThemes.includes(saved)) theme.value = saved; } catch (_) { /* File previews may disable storage. */ }
+      document.documentElement.dataset.theme = theme.value;
+      theme.addEventListener('change', () => { document.documentElement.dataset.theme = theme.value; try { localStorage.setItem('dipen-portfolio-theme', theme.value); } catch (_) {} });
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+      updateProjects();
+    })();
   </script>
 </body>
 </html>
